@@ -4,7 +4,7 @@
 ## Description
 Using an MVC model, the page allows users to add a burger to a database, devour it and move it to a list of devoured burgers, or throw it in the trash to delete it from the database.
 
-[Deployed Link]()
+[Deployed Link](https://sarvay-burger.herokuapp.com/)
 
 ![Badge](https://img.shields.io/static/v1?label=License&message=MIT&color=<brightgreen>)
 
@@ -38,6 +38,6 @@ Please feel free to reach out to either of the following links with questions re
 ##### Github: [JSarvay](http://github.com/JSarvay/)
 ##### E-mail: jordans1@vt.edu
 
-![landing](./pictures/landing.png)
-![note](./pictures/note.png)
-![saved](./pictures/saved.png)
+![landing](./public/assets/img/landing.png)
+![add](./public/assets/img/add.png)
+![devour](./public/assets/img/devour.png)
