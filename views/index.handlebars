@@ -1,19 +1,46 @@
-<h1>Eat-Da-Burger</h1>
+<div class= "container-fluid">
+  <div class="row">
+    <div class="col-12 jumbotron">
+      <i class="fas fa-hamburger"></i><h1>Eat-Da-Burger</h1><i class="fas fa-hamburger"></i>
+    </div>
+  </div>
+</div>
 
-<h2>Burgers Ready to be Devoured!</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 burger-box">
+      <h2>Burgers Ready to be Devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-    <li>
-    {{burger_name}}
-    <button class="change-devoured" data-id="{{id}}" data-newdevour="{{devoured}}">
-		Devour
-	</button>
-    </li>  
-    {{/unless}}
-  {{/each}}
-</ul>
+        <ul>
+          {{#each burgers}}
+            {{#unless devoured}}
+          <li>
+            {{burger_name}}
+              <button class="change-devoured" data-id="{{id}}" data-newdevour="{{devoured}}">
+		            Devour
+	            </button>
+          </li>  
+            {{/unless}}
+            {{/each}}
+        </ul>
+
+    </div>
+
+    <div class="col-md-3 burger-box">
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="bur">Burger Name:</label>
+    <input type="text" id="bur" name="name">
+  </div>
+
+  <button type="submit">Add Burger!</button>
+</form>
+
+    </div>
+
+    <div class="col-md-3 burger-box">
 
 <h2>Burgers That Have Been Devoured!</h2>
 
@@ -26,14 +53,6 @@
     {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bur">Burger Name:</label>
-    <input type="text" id="bur" name="name">
+    </div>
   </div>
-
-  <button type="submit">Add Burger!</button>
-</form>
+</div>

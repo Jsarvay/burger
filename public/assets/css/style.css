@@ -1,0 +1,37 @@
+body {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    background-image: linear-gradient(to right, rgb(99, 37, 37), rgb(128, 31, 31), rgb(160, 47, 18));
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: url("../img/burger-tile.jpg");
+    color: white;
+    border: solid white 5px;
+    text-shadow: black 5px 5px 5px;
+}
+
+.burger-box {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: black 5px solid;
+}
+
+.burger-box h2 {
+    text-shadow: -1px -1px 0 rgb(99,37,37), 1px -1px 0 rgb(99,37,37), -1px 1px 0 rgb(99,37,37), 1px 1px 0 rgb(99,37,37);
+}
+
+button {
+    background-color: black;
+    color: white;
+    text-shadow: rgb(99,37,37) 2px 2px 2px;
+    box-shadow:  rgb(99,37,37) 2px 2px 2px;
+    margin: 10px;
+}
+
+li {
+    size: 30px;
+    margin: 5px;
+}
