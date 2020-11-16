@@ -27,32 +27,33 @@
     </div>
 
     <div class="col-md-3 burger-box">
-<h2>Add a Burger</h2>
-<form class="create-form">
+      <h2>Add a Burger</h2>
+        <form class="create-form">
 
-  <div class="form-group">
-    <label for="bur">Burger Name:</label>
-    <input type="text" id="bur" name="name">
-  </div>
+          <div class="form-group">
+            <label for="bur">Burger Name:</label>
+            <input type="text" id="bur" name="name">
+          </div>
 
-  <button type="submit">Add Burger!</button>
-</form>
+          <button type="submit">Add Burger!</button>
+        </form>
 
     </div>
 
     <div class="col-md-3 burger-box">
 
-<h2>Burgers That Have Been Devoured!</h2>
+      <h2>Burgers That Have Been Devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-    <li>
-        {{burger_name}}
-    </li>
-    {{/if}}
-  {{/each}}
-</ul>
+        <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+            <li>
+              {{burger_name}}
+                <button class="delete-burger" data-id="{{id}}">Throw in Trash</button>
+            </li>
+          {{/if}}
+          {{/each}}
+        </ul>
     </div>
   </div>
 </div>
